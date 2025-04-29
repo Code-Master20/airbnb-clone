@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.add-home-heading {
+  padding: 0px 10px 5px 5px;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 100%;
+  text-wrap: nowrap;
+  box-sizing: border-box;
+  font-size: calc(0.8rem + 0.8vw);
+}
+
+.div-container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 8px auto;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(12, 12, 12, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-style {
+  width: 100%;
+  padding: 8px;
+  font-size: calc(0.6rem + 0.2vw);
+  box-sizing: border-box;
+}
+
+#file-receiver {
+  border: 1px solid rgb(155, 150, 150);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 8px;
+  font-size: calc(0.7rem + 0.3vw);
+  box-sizing: border-box;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

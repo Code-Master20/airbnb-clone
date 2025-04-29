@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.div-container {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.page-not-found-heading {
+  margin-bottom: 20px;
+  font-size: calc(16px + 1vw);
+}
+
+.go-to-home-button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: calc(8px + 0.5vw);
+  width: fit-content;
+}

@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.registered-homes {
+  background-color: white;
+  color: black;
+  padding: 7px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-container {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #b1caca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 10px 0;
+}
+
+/* 🔹 Main + Other Images Container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* 🔹 Main Image */
+.main-image {
+  width: 90%;
+  max-width: 400px;
+}
+
+#apartment-house-building {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* 🔹 Other Images (THUMBNAILS) */
+.other-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.img:hover {
+  transform: scale(1.5);
+}
+
+/* =========================== Responsive Switch =========================== */
+
+@media (min-width: 768px) {
+  .image-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .main-image {
+    width: 60%;
+    max-width: 400px;
+  }
+
+  .other-images {
+    flex-direction: column;
+    width: auto;
+    max-width: none;
+    justify-content: flex-start;
+  }
+
+  .img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+/* =========================== Rest of the Page =========================== */
+
+.details {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tbody tr {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+th {
+  min-width: 100px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+td {
+  flex: 1;
+  text-align: left;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+.ower-account {
+  background-color: aliceblue;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.owner-cart {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#owner-image {
+  border-radius: 50%;
+  max-width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#owner-name {
+  font-size: 14px;
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+#owner-name span {
+  cursor: pointer;
+}
+
+#owner-name span:active {
+  color: blue;
+  /* transform: scale3d(2, 2, 2);
+  transition: transform 0.2s ease; */
+  font-size: 16.5px;
+}
+
+#owner-contact,
+#to-follow-owner {
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #owner-name {
+    font-size: 12px;
+  }
+
+  #owner-contact,
+  #to-follow-owner {
+    font-size: 12px;
+    padding: 0.4em 0.8em;
+  }
+
+  .img {
+    width: 70px;
+    height: 45px;
+  }
+}
+.review-share-favorite {
+  width: 18px;
+  height: 18px;
+  fill: black;
+  cursor: pointer;
+}
+
+.review-share-favorite:hover {
+  fill: red;
+}
+
+.review-share-favorite:active {
+  fill: blue;
+  transform: scale(1.2);
+}
