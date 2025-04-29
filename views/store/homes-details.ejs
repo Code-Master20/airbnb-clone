@@ -1,0 +1,73 @@
+<%- include("../Partials/Head") %>
+  <link rel="stylesheet" href="/store/homes-details.css">
+  <link rel="stylesheet" href="/nav.css">
+
+  </head>
+
+  <body>
+    <%- include("../Partials/nav") %>
+      <main>
+        <h2 class="registered-homes">
+          You Are In Home Detail-Section
+        </h2>
+
+        <div class="details-container">
+
+          <div class="image-container">
+            <div class="main-image">
+              <abbr title="Apartment-House-Building"><img id="apartment-house-building" src="<%= home.imagePath1 %>"
+                  class="img-style" alt="Home image" /></abbr>
+            </div>
+            <div class="other-images">
+              <abbr title="Main-Hall"><img class="img" src="<%= home.mainHall %>" alt="main-hall"></abbr>
+              <abbr title="Kitchen-Hall"><img class="img" src="<%= home.kitchenHall %>" alt="kitchen"></abbr>
+              <abbr title="Bed-Room"><img class="img" src="<%= home.bedRoom %>" alt="bedroom"></abbr>
+              <abbr title="Bath-Room"><img class="img" src="<%= home.bathRoom %>" alt="Bath-Room"></abbr>
+              <abbr title="Balcony"> <img class="img" src="<%= home.balcony %>" alt="balcony"></abbr>
+            </div>
+          </div>
+
+          <div class="details">
+            <table>
+              <tbody class="tbody">
+                <tr>
+                  <th>Address:</th>
+                  <td style="text-align: left;">
+                    <%= home.houseAddress %>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Price Rs:</th>
+                  <td style="text-align: left; ">
+                    <%= home.housePrice %>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Location:</th>
+                  <td style="text-align: left;">
+                    <%= home.houseLocation %>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td style="text-align: left; ">
+                    <%= home.houseDescription %>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ower-account">
+            <div class="owner-cart">
+              <img id="owner-image" src="<%= home.ownerImage %>" alt="owner image">
+              <p id="owner-name"><span>Sahidur Miah</span></p>
+              <button id="owner-contact">contact</button>
+              <button id="to-follow-owner">follow</button>
+              <%- include("../Partials/favorites") %>
+            </div>
+          </div>
+        </div>
+      </main>
+  </body>
+
+  </html>

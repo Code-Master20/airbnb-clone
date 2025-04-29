@@ -1,0 +1,53 @@
+<%- include("../Partials/Head") %>
+  <link rel="stylesheet" href="/host/host-homes-list.css">
+  <link rel="stylesheet" href="/nav.css">
+  </head>
+
+  <body>
+    <%- include("../Partials/nav") %>
+      <main>
+        <h2 class="registered-homes">
+          Welcome to Host Homes-List
+        </h2>
+        <ul class="ul-homes">
+          <% registeredHomes.forEach(Home=> { %>
+            <li>
+              <div class="div-container">
+                <div class="image-div">
+                  <img src="<%= Home.imagePath1 %>" class="img-style" alt="Home image" />
+                </div>
+                <div class="home-name-container">
+                  <h3 class="home-name">
+                    <%= Home.houseName %>
+                  </h3>
+                </div>
+                <div class="para-div">
+                  <p class="para-style"><span>Address :</span>
+                    <%= Home.houseAddress %>
+                  </p>
+
+                  <p class="para-style"><span>Price Rs:</span>
+                    <%= Home.housePrice %>
+                  </p>
+
+                  <p class="para-style"> <span>Description :</span>
+                    <%= Home.houseDescription %>
+                  </p>
+
+                  <p class="para-style"><span>Location :</span>
+                    <%= Home.houseLocation %>
+                  </p>
+                </div>
+                <div class="button-div">
+                  <button class="btn-book"> <a style="color: white; text-decoration: none;" href="#">Delete</a></button>
+                  <button class="btn-book">Edit</button>
+                </div>
+              </div>
+
+            </li>
+            <%})%>
+        </ul>
+      </main>
+  </body>
+
+  </html>

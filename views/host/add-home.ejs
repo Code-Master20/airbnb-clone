@@ -1,0 +1,33 @@
+<%- include("../Partials/Head") %>
+  <link rel="stylesheet" href="/addHome.css">
+  <link rel="stylesheet" href="/nav.css">
+  </head>
+
+  <body>
+
+    <%- include("../Partials/nav") %>
+
+      <header>
+        <h1 class="add-home-heading">
+          Register Your Home On AirBnB</h1>
+      </header>
+
+      <main>
+        <div class="div-container">
+          <form action="/host/add-home" method="POST" class="form-card">
+            
+            <input type="text" name="houseName" placeholder="Enter The Name Of Your House" class="input-style" />
+            <input type="text" name="houseAddress" placeholder="Enter The Address Of Your House" class="input-style" />
+            <input type="text" name="housePrice" placeholder="Enter The Price Of Your House" class="input-style" />
+            <input type="text" name="houseDescription" placeholder="Enter The Description Of Your House"
+              class="input-style" />
+            <input type="text" name="houseLocation" placeholder="Enter The Location Of Your House"
+              class="input-style" />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+        </div>
+      </main>
+
+  </body>
+
+  </html>
